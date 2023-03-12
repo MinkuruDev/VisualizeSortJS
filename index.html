@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Visualize Sort</title>
+</head>
+<body>
+    <canvas id="mainCanvas" class="center"></canvas>
+    <br>
+
+    <div class="center">
+        <p>Sorting: </p>
+        <button onclick="sorting.bubbleSort()">Bubble Sort</button>
+        <button onclick="sorting.doQuickSort()">Quick Sort</button>
+    </div>
+    <br>
+    <div class="tab">
+        <p>Input: </p>
+        <input type="radio" name="manual" id="autoGenerate", checked="true">
+        <label for="">Auto generate Number</label>
+        <br>
+        <label for="">Number of elements: </label>
+        <input type="text" name="" id="nums" value="20">
+        <label for="">Minimun value:</label>
+        <input type="text" id="minVal" value="0">
+        <label for="">Maximum value:</label>
+        <input type="text" id="maxVal" value="100">
+        <br> <br>
+
+        <input type="radio" name="manual" id="">
+        <label for="">Mannual input (split elements with space): </label>
+        <br>
+        <label for="">Numbers: </label>
+        <input type="text" id="elements">
+        <br> <br>
+    </div>
+    <button class="center" onclick="ui.generateNumbers()">Generate number</button>
+
+    <div class="tab">
+        <p>Next step:</p>
+        <input type="radio" name="step" id="sleep" checked="true">
+        <label for="">Auto do next step after </label>
+        <input type="text" id="sleepValue" value="500">
+        <label for=""> ms</label>
+        <br>
+        <input type="radio" name="step" id="">
+        <label for="">Do next step after press any key</label>
+        <br>
+        <button onclick="ui.setNextStep()">Apply</button>
+    </div>
+
+    <!-- <script src="./js/CanvasController.js"></script>
+    <script src="./js/SortingAlgorithm.js"></script>
+    <script src="./js/UserInterface.js"></script>
+    <script src="./js/app.js"></script> -->
+
+    <script src="./obfuscator/CanvasController.js"></script>
+    <script src="./obfuscator/SortingAlgorithm.js"></script>
+    <script src="./obfuscator/UserInterface.js"></script>
+    <script src="./obfuscator/app.js"></script>
+</body>
+</html>

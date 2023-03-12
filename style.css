@@ -1,0 +1,23 @@
+html{
+    background: #181818;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#mainCanvas{
+    width: 80%;
+}
+
+.center{
+    text-align: center;
+    margin: auto;
+    display: block;
+}
+
+.tab{
+    margin-left: 10%;
+}
+
+#elements{
+    width: 80%;
+}
